@@ -22,7 +22,10 @@ function startGame() {
   const COUNT_MAX_PAIRS = 6;
 
   const inputData = validateData(
-    +prompt('Количество карточек по вертикали/горизонтали', DEFAULT_INPUT_DATA)
+    +prompt(
+      'Кол-во карт по вертикали/горизонтали. Максимум: ' + COUNT_MAX_PAIRS,
+      DEFAULT_INPUT_DATA
+    )
   );
   const pairCount = (inputData * inputData) / 2;
 
